@@ -1,0 +1,17 @@
+Name:            CRC
+Version:         0.0
+Cabal-Version:   >= 1.2
+License:         GPL-3
+Author:          Yuri Krivopalov
+Synopsis:        CRC
+Build-Type:      Simple
+
+library
+    exposed-modules: Data.Digest.CRC
+    build-depends: array, base
+
+Test-Suite crc-test
+    type: exitcode-stdio-1.0
+    main-is: Test/CRC.hs
+    build-depends: array, base, HUnit
+
